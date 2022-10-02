@@ -12,7 +12,7 @@ public class SimpleTest {
     public void test2() {
         System.out.println("Success");
     }
-    @Test(enabled = false)
+    @Test
     public void test3() {
         boolean failOrNotFail = new Random().nextBoolean();
         if(failOrNotFail) {
@@ -22,7 +22,7 @@ public class SimpleTest {
         }
     }
 
-    @Test(enabled = false)
+    @Test
     public void test4() {
         Assert.fail("Fail 4");
     }
